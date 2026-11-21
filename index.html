@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f2f0">
+  <meta name="description" content="Download MY BIBLE — Rehoboth for Android. Read, reflect and grow offline.">
+  <title>MY BIBLE — Rehoboth | Android download</title>
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="MY BIBLE home">
+      <img src="assets/favicon-32.png" alt="">
+      <span class="brand-name"><strong>MY BIBLE</strong><small>REHOBOTH</small></span>
+    </a>
+    <nav aria-label="Page links">
+      <a href="#features">The app</a>
+      <a href="#translations">Translations</a>
+      <a href="#install">Get started</a>
+    </nav>
+    <a class="header-download" href="my-bible-rehoboth.apk" download>
+      <span>Download APK</span><b aria-hidden="true">↓</b>
+    </a>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="platform">For Android</p>
+        <h1>Read deeply.<br><em>Live faithfully.</em></h1>
+        <p class="lede">MY BIBLE — Rehoboth brings Scripture, prayer notes and your personal journal together in one focused offline app.</p>
+        <a class="download-button" href="my-bible-rehoboth.apk" download>
+          <span>Download the app</span><b aria-hidden="true">↓</b>
+        </a>
+      </div>
+      <div class="phone-stage" aria-label="MY BIBLE app preview">
+        <div class="phone">
+          <div class="phone-camera"></div>
+          <div class="phone-screen">
+            <div class="status-bar"><span>9:41</span><span>● ●</span></div>
+            <img class="phone-logo" src="assets/rehoboth-true-logo.png" alt="">
+            <p class="phone-welcome">Good morning</p>
+            <div class="verse-panel">
+              <span>Today’s verse</span>
+              <p>“Be still, and know that I am God.”</p>
+              <small>Psalm 46:10</small>
+            </div>
+            <div class="reading-row">
+              <div><span>Continue reading</span><strong>John 3</strong></div>
+              <b aria-hidden="true">→</b>
+            </div>
+            <nav class="phone-nav" aria-label="App navigation preview">
+              <span class="active">⌂<small>Home</small></span>
+              <span>▤<small>Bible</small></span>
+              <span>✎<small>Journal</small></span>
+              <span>☷<small>More</small></span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features" id="features">
+      <article class="feature-row" id="translations">
+        <div class="feature-visual translation-visual">
+          <span class="scripture-mark">A little more room to read</span>
+          <div class="open-book"><span>MY BIBLE</span><b>Rehoboth</b></div>
+        </div>
+        <div class="feature-copy"><h2>Read in the words you know.</h2><p>Choose KJV, NIV, AMP or Yoruba. All four translations are available offline, wherever you happen to be.</p></div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy"><h2>A place for your thoughts.</h2><p>Keep prayer notes, journal entries and highlighted verses together. Your notes stay on your device.</p></div>
+        <div class="feature-visual journal-visual">
+          <div class="journal-card"><small>PRAYER JOURNAL</small><b>Grace for today</b><p>Let me listen, wait and walk in wisdom.</p><span>Saved privately</span></div>
+          <div class="bookmark">Psalm 46</div>
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-visual reading-visual">
+          <div class="reading-card"><small>DAILY READING</small><b>John 3</b><span>12 of 21 verses</span><i></i></div>
+          <div class="reading-card small"><b>Daily devotion</b><span>5 minute read</span></div>
+        </div>
+        <div class="feature-copy"><h2>Pick up where you left off.</h2><p>Keep track of your reading and make time for a short devotional when it suits you.</p></div>
+      </article>
+    </section>
+    <section class="install-section" id="install">
+      <div><p>For Android 7.0 and newer</p><h2>Keep Scripture close.</h2></div>
+      <a class="closing-download" href="my-bible-rehoboth.apk" download><span>Download for Android</span><b>↓</b></a>
+    </section>
+  </main>
+  <footer>
+    <span>MY BIBLE — Rehoboth</span>
+    <span>© 2026</span>
+  </footer>
+  <script>
+    if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const revealItems = document.querySelectorAll(".feature-row, .install-section");
+      document.documentElement.classList.add("reveal-ready");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach((item) => observer.observe(item));
+    }
+  </script>
+</body>
+</html>
